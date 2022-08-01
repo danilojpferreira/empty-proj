@@ -1,0 +1,32 @@
+version: '2'
+services:
+  fe:
+    build: ./frontend
+    restart: always
+    ports:
+      - '8080:8080'
+    depends_on:
+      - be
+  be:
+    build: ./backend
+    restart: always
+    ports:
+      - '3000:3000'
+    depends_on:
+      - empty-proj_mongo
+    links:
+      - empty-proj_mongo
+    environment:
+      - MONGO_URI=mongodb://empty-proj_mongo:27017/empty-proj/
+  empty-proj_mongo:
+    image: mongo
+    restart: always
+    volumes:
+            - ./database:/app
+    command: mongod --noauth
+    ports:
+      - '27017:27017'
+  mongo_data:
+   build: ./database
+   links:
+    - empty-proj_mongo

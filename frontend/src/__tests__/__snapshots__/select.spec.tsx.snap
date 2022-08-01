@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Select /> Should render correctly 1`] = `
+<div
+  className="select undefined"
+>
+  <div
+    className="MuiFormControl-root select_form-control css-1nrlq1o-MuiFormControl-root"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-filled MuiFormLabel-colorPrimary MuiFormLabel-filled css-o943dk-MuiFormLabel-root-MuiInputLabel-root"
+      data-shrink={true}
+    >
+      Select me
+    </label>
+    <div
+      className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl  css-67qocj-MuiInputBase-root-MuiFilledInput-root-MuiSelect-root"
+      onClick={[Function]}
+    >
+      <div
+        aria-expanded="false"
+        aria-haspopup="listbox"
+        className="MuiSelect-select MuiSelect-filled MuiInputBase-input MuiFilledInput-input css-d9oaum-MuiSelect-select-MuiInputBase-input-MuiFilledInput-input"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          className="notranslate"
+        >
+          ​
+        </span>
+      </div>
+      <input
+        aria-hidden={true}
+        className="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+        disabled={false}
+        onAnimationStart={[Function]}
+        onChange={[Function]}
+        required={false}
+        tabIndex={-1}
+        value="car"
+      />
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiSelect-iconFilled css-hfutr2-MuiSvgIcon-root-MuiSelect-icon"
+        data-testid="ArrowDropDownIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
